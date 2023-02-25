@@ -6,7 +6,7 @@ class LocationState extends Equatable {
   final List<LatLng> myLocationHistory;
 
   const LocationState({
-    this.followingUser = false,
+    this.followingUser = true,
     this.lastKnownLocation,
     this.myLocationHistory = const [],
   });
