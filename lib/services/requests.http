@@ -1,0 +1,5 @@
+
+### Get Directions
+GET https://api.mapbox.com/directions/v5/mapbox/driving/-72.103319%2C-36.606662%3B-71.958121%2C-36.424819?alternatives=true&geometries=polyline6&language=en&overview=simplified&steps=true&access_token=pk.eyJ1IjoiY2FtaWxvamltZW5lemYiLCJhIjoiY2xlazVqcWJsMDc1ZzNzcm4wNnNvMTkybiJ9.zGQAnqsQnpXrHnk0YzQjwA
+content-type: application/json
+

@@ -28,6 +28,10 @@ class MapView extends StatelessWidget {
       mapBloc.add(OnMapInitializedEvent(googleMapController));
     }
 
+    void onCameraMove(CameraPosition position) {
+      mapBloc.mapCenter = position.target;
+    }
+
     return SizedBox(
       width: size.width,
       height: size.height,
@@ -41,8 +45,7 @@ class MapView extends StatelessWidget {
           myLocationButtonEnabled: false,
           polylines: polylines,
           onMapCreated: onMapCreated,
-          // TODO: Markers
-          // TODO: Cuando se mueve el mapa
+          onCameraMove: onCameraMove,
         ),
       ),
     );
